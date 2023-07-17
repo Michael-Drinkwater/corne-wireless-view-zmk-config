@@ -15,15 +15,15 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | PG_UP |
-// | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | ENT   |
+// | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | ALT   |
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | PG_DN |
-//                    | GUI | LWR | BKSP|   | SPC | RSE  | ALT |
+//                    | GUI | LWR | BKSP|   | SPC | RSE  | ENT |
                         label = "Base";
                         bindings = <
    &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp PG_UP
-   &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
+   &kp LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RALT
    &kp LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp PG_DN
-                  &kp LGUI &mo 1 &kp BSPC   &kp SPACE &mo 2 &kp RALT
+                  &kp LGUI &mo 1 &kp BSPC   &kp SPACE &mo 2 &kp RET
                         >;
                 };
                 lower_layer {
