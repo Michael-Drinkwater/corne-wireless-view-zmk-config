@@ -37,7 +37,7 @@
                 , <&kp SPACE>
                 , <&kp MINUS &kp M>
                 , <&kp SPACE>
-                , <&kp DQT &kp LBRC &kp RBRC>
+                , <&kp DQT &kp LBKT &kp RBKT>
                 , <&kp SPACE>
                 , <&kp MINUS>
                 , <&kp SPACE>
@@ -54,6 +54,17 @@
                 = <&kp G &kp I &kp T>
                 , <&kp SPACE>
                 , <&kp P &kp U &kp S &kp H>
+            ;
+        )
+
+        ZMK_MACRO(
+            git_status,
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings 
+                = <&kp G &kp I &kp T>
+                , <&kp SPACE>
+                , <&kp S &kp T &kp A &kp T &kp U &kp S>
             ;
         )
     };
@@ -83,13 +94,13 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |     |     |     |   | M1  |  7  |  8  |  9  |     | BKSP |
+// |  TAB |     |     |     |     |     |   | M1  |  7  |  8  |  9  | M4  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | M2  |  4  |  5  |  6  |     | ALT  |
 // | SHFT |     |     |     |     |     |   | M3  |  1  |  2  |  3  |     |      |
 //                    | GUI |     |     |   | TAB |  0  |     |
                         label = "Lower";
                         bindings = <
-   &kp TAB    &trans &trans &trans &trans &trans &git_add &kp N7   &kp N8 &kp N9    &trans &kp BSPC
+   &kp TAB    &trans &trans &trans &trans &trans &git_add &kp N7   &kp N8 &kp N9    &git_status &kp BSPC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &git_commit &kp N4 &kp N5 &kp N6 &trans &kp RALT
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans       &git_push &kp N1   &kp N2 &kp N3    &trans &trans
                           	        &kp LGUI     &trans       &trans      &kp TAB &kp N0  &trans
@@ -99,8 +110,8 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // | TAB  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | SHFT |  '  |LEFT |DOWN |  UP |RIGHT|   |  _  |  {  |  }  |  =  |  \  |  ALT |
-// | CTRL |  "  |  ~  |  `  |     |     |   |  -  |  [  |  ]  |  +  | "|" |      |
+// | SHFT |  '  |LEFT |DOWN |  UP |RIGHT|   |  _  |  [  |  ]  |  =  |  \  |  ALT |
+// | CTRL |  "  |  ~  |  `  |     |     |   |  -  |  {  |  }  |  +  | "|" |      |
 //                    | GUI |     | DEL |   |     |     |     |
                         label = "Raise";
                         bindings = <
