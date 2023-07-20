@@ -67,6 +67,45 @@
                 , <&kp S &kp T &kp A &kp T &kp U &kp S>
             ;
         )
+
+        ZMK_MACRO(
+            m_d,
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings 
+                = <&kp M &kp I &kp C &kp H &kp A &kp E &kp L>
+                , <&kp DOT>
+                , <&kp D &kp R &kp I &kp N &kp K &kp W &kp A &kp T &kp E &kp R>
+            ;
+        )
+
+        ZMK_MACRO(
+            pta_pw,
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings 
+                = <&macro_press   &kp LSHFT>
+                , <&macro_tap     &kp N>
+                , <&macro_release &kp LSHFT>
+                , <&kp J &kp N6 &kp O> 
+                , <&macro_press   &kp LSHFT>
+                , <&macro_tap     &kp T>
+                , <&macro_release &kp LSHFT>
+                , <&kp G>
+                , <&macro_press   &kp LSHFT>
+                , <&macro_tap     &kp E &kp U>
+                , <&macro_release &kp LSHFT>
+                , <&kp X &kp N8 &kp HASH &kp I>
+                , <&macro_press   &kp LSHFT>
+                , <&macro_tap     &kp X &kp E>
+                , <&macro_release &kp LSHFT>
+                , <&kp P &kp HASH>
+                , <&macro_press   &kp LSHFT>
+                , <&macro_tap     &kp M>
+                , <&macro_release &kp LSHFT>
+                , <&kp M>
+            ;
+        )
     };
 };
 
@@ -94,15 +133,15 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |     |     |     |   | M1  |  7  |  8  |  9  | M4  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | M2  |  4  |  5  |  6  |     | ALT  |
-// | SHFT |     |     |     |     |     |   | M3  |  1  |  2  |  3  |     |      |
+// | TAB  | M5  | M6  |     |     |BTCLR|   | M1  |  7  |  8  |  9  | M4  | BKSP |
+// | SHFT | BT1 | BT2 | BT3 | BT4 | BT5 |   | M2  |  4  |  5  |  6  |     | ALT  |
+// | CTRL |     |     |     |     |     |   | M3  |  1  |  2  |  3  |     |      |
 //                    | GUI |     |     |   | TAB |  0  |     |
                         label = "Lower";
                         bindings = <
-   &kp TAB    &trans &trans &trans &trans &trans &git_add &kp N7   &kp N8 &kp N9    &git_status &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &git_commit &kp N4 &kp N5 &kp N6 &trans &kp RALT
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans       &git_push &kp N1   &kp N2 &kp N3    &trans &trans
+   &kp TAB   &m_d &pta_pw &trans &trans &bt BT_CLR &git_add &kp N7   &kp N8 &kp N9    &git_status &kp BSPC
+   &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &git_commit &kp N4 &kp N5 &kp N6 &trans &kp RALT
+   &kp LCTRL &trans       &trans       &trans       &trans       &trans       &git_push &kp N1   &kp N2 &kp N3    &trans &trans
                           	        &kp LGUI     &trans       &trans      &kp TAB &kp N0  &trans
                         >;
                 };
