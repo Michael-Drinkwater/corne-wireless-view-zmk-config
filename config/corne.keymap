@@ -87,23 +87,23 @@
                 = <&macro_press   &kp LSHFT>
                 , <&macro_tap     &kp N>
                 , <&macro_release &kp LSHFT>
-                , <&kp J &kp N6 &kp O> 
+                , <&macro_tap     &kp J &kp N6 &kp O> 
                 , <&macro_press   &kp LSHFT>
                 , <&macro_tap     &kp T>
                 , <&macro_release &kp LSHFT>
-                , <&kp G>
+                , <&macro_tap     &kp G>
                 , <&macro_press   &kp LSHFT>
                 , <&macro_tap     &kp E &kp U>
                 , <&macro_release &kp LSHFT>
-                , <&kp X &kp N8 &kp HASH &kp I>
+                , <&macro_tap     &kp X &kp N8 &kp HASH &kp I>
                 , <&macro_press   &kp LSHFT>
                 , <&macro_tap     &kp X &kp E>
                 , <&macro_release &kp LSHFT>
-                , <&kp P &kp HASH>
+                , <&macro_tap     &kp P &kp HASH>
                 , <&macro_press   &kp LSHFT>
                 , <&macro_tap     &kp M>
                 , <&macro_release &kp LSHFT>
-                , <&kp M>
+                , <&macro_tap     &kp M>
             ;
         )
     };
