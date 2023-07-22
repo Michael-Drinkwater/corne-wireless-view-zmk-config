@@ -149,14 +149,14 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // | TAB  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | SHFT |  '  |LEFT |DOWN |  UP |RIGHT|   |  _  |  [  |  ]  |  =  |  \  |  ALT |
-// | CTRL |  "  |  ~  |  `  |     |     |   |  -  |  {  |  }  |  +  | "|" |      |
+// | SHFT |  '  |LEFT |DOWN |  UP |RIGHT|   |  _  |  ]  |  [  |  =  |  \  |  ALT |
+// | CTRL |  "  |  ~  |  `  |     |     |   |  -  |  }  |  {  |  +  | "|" |      |
 //                    | GUI |     | DEL |   |     |     |     |
                         label = "Raise";
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LSHFT &kp SQT &kp LEFT &kp DOWN   &kp UP   &kp RIGHT      &kp UNDER &kp LBKT &kp RBKT &kp EQUAL &kp BSLH &kp RALT
-   &kp LCTRL &kp DQT &kp TILDE &kp GRAVE &trans   &trans      &kp MINUS &kp LBRC &kp RBRC &kp PLUS &kp PIPE &trans 
+   &kp LSHFT &kp SQT &kp LEFT &kp DOWN   &kp UP   &kp RIGHT      &kp UNDER &kp RBKT &kp LBKT &kp EQUAL &kp BSLH &kp RALT
+   &kp LCTRL &kp DQT &kp TILDE &kp GRAVE &trans   &trans      &kp MINUS &kp RBRC &kp LBRC &kp PLUS &kp PIPE &trans 
                     	     &kp LGUI &trans &kp DEL   &trans &trans &trans
                         >;
                 };
